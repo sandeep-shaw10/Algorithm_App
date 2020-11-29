@@ -56,6 +56,8 @@ $(document).ready(function(){
         //console.log("BUBBLE SORT SPEED")
         $("#b_amount").prop('disabled', true);
         $("#b_speed").prop('disabled', true);
+        $("#bubble-g").prop('disabled', true);
+        $("#bubble-f").prop('disabled', true);
         var c = 0;
         var swap = false;
         for (let i = 0; i < amt-1; i++) {
@@ -168,6 +170,8 @@ function task(time,i,j,swap){
             ////console.log(i+","+j)
             $("#b_amount").prop('disabled', false);
             $("#b_speed").prop('disabled', false);
+            $("#bubble-g").prop('disabled', false);
+            $("#bubble-f").prop('disabled', false);
         }
     }, speed*time);
 }
