@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!---------Icon------->
+    <link rel = "icon" href = "images/icon.ico" type = "image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Algorithm App</title>
+  </head>
+  <body>
+   <!-- Navigation Bar -->
+   <nav class="navbar navbar-expand-lg navbar-light" id="top">
+      <a class="navbar-brand" href="#">
+         <img src="images/icon-big.png" width="60" height="60" class="d-inline-block align-top" alt="" loading="lazy">
+      </a>
+      <a class="navbar-brand navbar-brand-name" href="#">
+         Algorithm App
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+         <div class="navbar-nav ml-auto">
+            <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#sorting">Sorting</a>
+            <a class="nav-link" href="#searching">Searching</a>
+            <a class="nav-link " href="#footer">Contact</a>
+         </div>
+      </div>
+   </nav>
+<!-- Introduction -->
+   <section class="icon-show" id="home">
+      <div class="icon-container">
+         <div class="icon">
+            <img src="images/algoicon.png" class="d-inline-block align-top img-fluid" alt="" loading="lazy">
+         </div>
+         <div class="icon-text">
+            <h3>Algorithm Visualization</h3>
+            <p><i class="fa fa-quote-left"></i>&nbsp;Understand the&nbsp;Sorting&nbsp;oncept by&nbsp;visualizing&nbsp;it&nbsp;better&nbsp;<i class="fa fa-quote-right"></i></p>
+            <button type="button" class="btn custom-btn">Start</button>
+         </div>
+      </div>
+   </section>
+
+
+<hr>
+
+<!------------SORTING-MAIN ALGORITHM PANEL----------->
+<section class="algorithm-main" id="sorting">
+
+   <article class="text-center main bubble-sort" id="bubble-sort">
+      <h1>BUBBLE SORT</h1>
+      <div class="chart chart-bubble text-center">
+      </div>
+      <dv class="container m-0 p-0 ">
+         <div class="row  m-0 p-0 justify-content-center">
+            <div class="col-lg-4 col-md-4 col-sm-6 my-2">
+               <button class="btn custom-btn" id = "bubble-g">Generate</button>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 my-2">
+               <button class="btn custom-btn" id = "bubble-f">Sort</button>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 my-2">
+               <button class="btn custom-btn" id = "bubble-x">Stop</button>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+               <input type="range" min="1" max="100" value="20" id="b_amount">
+               <p>Amount : <span id="b_amount_val"></span></p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+               <input type="range" min="1" max="1000" value="850" id="b_speed">
+               <p>Speed : <span id="b_speed_val"></span></p>
+            </div>
+         </div>
+      </dv>
+      <img src="images/algoicon.png" width="500" height="500" class="mx-auto img-fluid" alt="" loading="lazy">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Laudantium sint tenetur animi unde dolorum distinctio consequuntur,
+      adipisci ipsum ab aut quae beatae officiis tempora cumque explicabo est dolores, 
+      possimus architecto iure placeat incidunt tempore maiores vero. Non totam quae quidem, 
+      perspiciatis officia magnam ad architecto temporibus impedit odio consequatur 
+      porro deleniti numquam facilis distinctio accusamus placeat nemo! 
+      Distinctio eligendi laborum deserunt, laboriosam neque dicta.</p>
+   </article>
+
+   <article class="text-center main selection-sort" id="selection-sort">
+      <h1>SELECTION SORT</h1>
+      <img src="images/algoicon.png" width="500" height="500" class="mx-auto img-fluid" alt="" loading="lazy">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Laudantium sint tenetur animi unde dolorum distinctio consequuntur,
+         adipisci ipsum ab aut quae beatae officiis tempora cumque explicabo est dolores, 
+         possimus architecto iure placeat incidunt tempore maiores vero. Non totam quae quidem, 
+         perspiciatis officia magnam ad architecto temporibus impedit odio consequatur 
+         porro deleniti numquam facilis distinctio accusamus placeat nemo! 
+         Distinctio eligendi laborum deserunt, laboriosam neque dicta.</p>
+   </article>
+
+   <article class="text-center main heap-sort" id="heap-sort">
+      <h1>HEAP SORT</h1>
+      <img src="images/algoicon.png" width="500" height="500" class="mx-auto img-fluid" alt="" loading="lazy">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Laudantium sint tenetur animi unde dolorum distinctio consequuntur,
+         adipisci ipsum ab aut quae beatae officiis tempora cumque explicabo est dolores, 
+         possimus architecto iure placeat incidunt tempore maiores vero. Non totam quae quidem, 
+         perspiciatis officia magnam ad architecto temporibus impedit odio consequatur 
+         porro deleniti numquam facilis distinctio accusamus placeat nemo! 
+         Distinctio eligendi laborum deserunt, laboriosam neque dicta.</p>
+   </article>
+
+   <article class="text-center main quick-sort" id="quick-sort">
+      <h1>QUICK SORT</h1>
+      <img src="images/algoicon.png" width="500" height="500" class="mx-auto img-fluid" alt="" loading="lazy">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+         Laudantium sint tenetur animi unde dolorum distinctio consequuntur,
+         adipisci ipsum ab aut quae beatae officiis tempora cumque explicabo est dolores, 
+         possimus architecto iure placeat incidunt tempore maiores vero. Non totam quae quidem, 
+         perspiciatis officia magnam ad architecto temporibus impedit odio consequatur 
+         porro deleniti numquam facilis distinctio accusamus placeat nemo! 
+         Distinctio eligendi laborum deserunt, laboriosam neque dicta.</p>
+   </article>
+
+</section>
+<!-----------END OF MAIN ALGORITHM PANEL----------->
+
+
+<!-- Footer -->
+   <div class='footer-container' id="footer">
+      <section class='footer-subscription'>
+      <p class='footer-subscription-heading'>
+         Join our exclusive membership to receive the latest news and trends
+      </p>
+      <p class='footer-subscription-text'>
+         You can unsubscribe at any time.
+      </p>
+      <div class='input-areas'>
+         <form>
+            <input class='footer-input' name='email' type='email' placeholder='Your Email'/>
+            <button type="button" class="btn in-custom-btn">Subscribe</button>
+         </form>
+      </div>
+      </section>
+      <div class='footer-links'>
+      <div class='footer-link-wrapper'>
+         <div class='footer-link-items'>
+            <h2>About Us</h2>
+            <a href="#">How it works</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Careers</a>
+            <a href="#">Investors</a>
+            <a href="#">Terms of Service</a>
+         </div>
+         <div class='footer-link-items'>
+            <h2>Contact Us</h2>
+            <a href="#">Contact</a>
+            <a href="#">Support</a>
+            <a href="#">Destinations</a>
+            <a href="#">Sponsorships</a>
+         </div>
+      </div>
+      <div class='footer-link-wrapper'>
+         <div class='footer-link-items'>
+            <h2>Videos</h2>
+            <a href="#">Submit Video</a>
+            <a href="#">Ambassadors</a>
+            <a href="#">Agency</a>
+            <a href="#">Influencer</a>
+         </div>
+         <div class='footer-link-items'>
+            <h2>Get Social</h2>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Youtube</a>
+            <a href="#">Twitter</a>
+         </div>
+      </div>
+      </div>
+      <section class='social-media'>
+      <div class='social-media-wrap'>
+         <div class='footer-logo'>
+            <a href="#top" class='social-logo'>
+               <img src="images/icon-big.png" width="60" height="60" class="d-inline-block align-top" alt="" loading="lazy">
+            SIGHT EXPLORE
+            </a>
+         </div>
+         <small class='website-rights'>SIGHT EXPLORE © 2020</small>
+         <div class='social-icons'>
+            <a class='social-icon-link' href="#" target='_blank' aria-label='Facebook'>
+               <i class="fa fa-facebook-square"></i>
+            </a>
+            <a class='social-icon-link' href="#" target='_blank' aria-label='Instagram' >
+               <i class="fa fa-instagram"></i>
+            </a>
+            <a class='social-icon-link' href='//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber' target='_blank' aria-label='Youtube'>
+               <i class="fa fa-youtube-play"></i>
+            </a>
+            <a class='social-icon-link' href="#" target='_blank' aria-label='Twitter'>
+               <i class="fa fa-twitter-square"></i>
+            </a>
+            <a class='social-icon-link' href="#" target='_blank' aria-label='LinkedIn' >
+               <i class="fa fa-linkedin-square"></i>
+            </a>
+         </div>
+      </div>
+      </section>
+   </div>
+   <!-- Optional JavaScript -->
+   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   <script src="js/smooth-scroll.js"></script>
+   <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+   </script>
+   <script src="js/slider.js"></script>
+   <script src="js/bubblesort.js"></script>
+   </body>
+</html>
