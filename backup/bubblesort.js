@@ -2,50 +2,50 @@
 //MIT LICENSE 2020 SANDEEP SHAW
 
 
-var amt1=20, speed1=250;
-let bubbleArray = []
-var loop1;
+var amt=20, speed=250;
+let valArray = []
+var loop;
 
 
 $(document).ready(function(){
     $("#b_amount").on("input", function(){
-        amt1 = this.value
-        bubbleArray = generateBubbleData(amt1,[])
+        amt = this.value
+        valArray = generateData(amt,[])
      });
     
      $("#b_speed").on("input", function(){
-        speed1 = (1001-this.value)/amt1
+        speed = (1001-this.value)/amt
      });
     
-    //console.log(amt1+", "+speed1)
+    //console.log(amt+", "+speed)
 
     //Bubble sort visualization  
     $("#bubble-f").click(function(){
-        //console.log("BUBBLE SORT SPEED1")
-        //console.log(amt1)
-        //console.log(bubbleArray)
+        //console.log("BUBBLE SORT SPEED")
+        console.log(amt)
+        console.log(valArray)
         $("#b_amount").prop('disabled', true);
         $("#b_speed").prop('disabled', true);
         $("#bubble-g").prop('disabled', true);
         $("#bubble-f").prop('disabled', true);
         var c = 0;
         var swap = false;
-        for (let i = 0; i < amt1-1; i++) {
-            for(let j = 0; j<amt1-i-1; j++){
+        for (let i = 0; i < amt-1; i++) {
+            for(let j = 0; j<amt-i-1; j++){
                 c += 1
-                if(bubbleArray[j]>bubbleArray[j+1]){
+                if(valArray[j]>valArray[j+1]){
                     swap = true
-                    task1(c,i,j,swap)
-                    let temp = bubbleArray[j]
-                    bubbleArray[j] = bubbleArray[j+1]
-                    bubbleArray[j+1] = temp
+                    task(c,i,j,swap)
+                    let temp = valArray[j]
+                    valArray[j] = valArray[j+1]
+                    valArray[j+1] = temp
                 }else{
                     swap = false
-                    task1(c,i,j,swap)
+                    task(c,i,j,swap)
                 }
             }
         }
-        //console.log(bubbleArray)
+        console.log(valArray)
       });
   });
 
@@ -54,9 +54,9 @@ $(document).ready(function(){
 $( window ).resize(function() {
     let divWidth =  $(".chart-bubble").width();
     let margin = 0.1 * divWidth
-    let widFactor = ((divWidth - margin)/amt1) + "px";
-    $(".chart-bar").css("margin-left", margin/amt1);
-    $(".chart-bar").css("margin-right", margin/amt1);
+    let widFactor = ((divWidth - margin)/amt) + "px";
+    $(".chart-bar").css("margin-left", margin/amt);
+    $(".chart-bar").css("margin-right", margin/amt);
     $(".chart-bar").css("width", widFactor);
 });
 
@@ -73,40 +73,40 @@ function swap(arr,a,b){
 }
 
 //Data generate
-function generateBubbleData(amt1, bubbleArray){
+function generateData(amt, valArray){
     $(".chart-bubble").empty();
         let divWidth =  $(".chart-bubble").width();
         let margin = 0.1 * divWidth
         let max = 5;
         //min value 5 - max value 1000 Generating Random
         //console.log(divWidth)
-        for(i=0;i<amt1;i++){
-            bubbleArray[i] = getRndInteger(10, 1000);
-            if(max < bubbleArray[i]){
-                max = bubbleArray[i];
+        for(i=0;i<amt;i++){
+            valArray[i] = getRndInteger(10, 1000);
+            if(max < valArray[i]){
+                max = valArray[i];
             }
         }
         //console.log("MAXIUM NUMBER = ",max)
-        for(i=0;i<amt1;i++){
-            let lenFactor = 95 * (bubbleArray[i]/max)
-            let widFactor = ((divWidth - margin)/amt1)
+        for(i=0;i<amt;i++){
+            let lenFactor = 95 * (valArray[i]/max)
+            let widFactor = ((divWidth - margin)/amt)
             $('.chart-bubble').prepend('<div class="chart-bar" style="height : '+ lenFactor +'%; width : '+ widFactor +'px; "></div>')
         }
-        //console.log("BUBBLE SORT AMOUNT",amt1)
-        $(".chart-bar").css("margin-left", margin/amt1);
-        $(".chart-bar").css("margin-right", margin/amt1);
-        bubbleArray = bubbleArray.reverse()
-        //console.log(bubbleArray)
+        //console.log("BUBBLE SORT AMOUNT",amt)
+        $(".chart-bar").css("margin-left", margin/amt);
+        $(".chart-bar").css("margin-right", margin/amt);
+        valArray = valArray.reverse()
+        //console.log(valArray)
 
-        return bubbleArray
+        return valArray
 }
 
 //Visualizing the bars
-function task1(time,i,j,swap){
-    loop1 = setTimeout(function(){
+function task(time,i,j,swap){
+    loop = setTimeout(function(){
             //#1c2237
         //representing the unsorted array
-        for(let m=0;m<amt1-i;m++){
+        for(let m=0;m<amt-i;m++){
             $(".chart-bar:nth-child("+(m+1)+")").css("background-color",  " #66ffb5");
         }
        // $(".chart-bar").css("background-color",  "#66ffb5");
@@ -125,12 +125,12 @@ function task1(time,i,j,swap){
         $(".chart-bar:nth-child("+(j+1)+")").css("background-color",  " #ff3333");
         $(".chart-bar:nth-child("+(j+2)+")").css("background-color",  " #ff3333");
 
-        if(amt1 == i+j+2){
-            $(".chart-bar:nth-child("+(amt1-i)+")").css("background-color",  "#1c2237");
+        if(amt == i+j+2){
+            $(".chart-bar:nth-child("+(amt-i)+")").css("background-color",  "#1c2237");
             ////console.log(i+" + "+j+" qwerty")
         }
 
-        if(i == amt1-2 && j==0){
+        if(i == amt-2 && j==0){
             $(".chart-bar").css("background-color",  "#1c2237");
             ////console.log(i+","+j)
             $("#b_amount").prop('disabled', false);
@@ -138,9 +138,9 @@ function task1(time,i,j,swap){
             $("#bubble-g").prop('disabled', false);
             $("#bubble-f").prop('disabled', false);
         }
-    }, speed1*time);
+    }, speed*time);
 }
 
 
 //Open screen
-generateBubbleData(20, [])
+generateData(20, [])

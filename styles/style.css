@@ -9,6 +9,8 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
 
+
+
 /*------------Button----------------*/
 .custom-btn{
     background-color: #66ffb5 !important;
@@ -77,8 +79,9 @@ body{
     margin:5px 25px;
 }
 
-.chart-bar{
+.chart-bar, .chart-bar1{
     box-sizing: border-box;
+    border-radius: 3px;
     /*width:0.9rem*/
     /*height:95%;*/
     margin-top:2px;
@@ -125,6 +128,15 @@ body{
 @media screen and (max-width:576px){
     .icon{
         width:120vw;
+    }
+
+    /*-----------Line-----------------*/
+    .hr{
+        width:80%;
+        height:3px;
+        border-radius: 3px;
+        background-color: #c4c4c4;
+        margin: 10px auto;
     }
 }
 

@@ -52,7 +52,7 @@
    </section>
 
 
-<hr>
+   <div class="hr"></div>
 
 <!------------SORTING-MAIN ALGORITHM PANEL----------->
 <section class="algorithm-main" id="sorting">
@@ -63,22 +63,19 @@
       </div>
       <dv class="container m-0 p-0 ">
          <div class="row  m-0 p-0 justify-content-center">
-            <div class="col-lg-4 col-md-4 col-sm-6 my-2">
-               <button class="btn custom-btn" id = "bubble-g">Generate</button>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-6 my-2">
-               <button class="btn custom-btn" id = "bubble-f">Sort</button>
-            </div>
             <!--<div class="col-lg-4 col-md-4 col-sm-6 my-2">
                <button class="btn custom-btn" id = "bubble-x">Stop</button>
             </div>-->
             <div class="col-lg-4 col-md-4 col-sm-6">
-               <input type="range" min="1" max="100" value="20" id="b_amount">
+               <input type="range" min="2" max="100" value="20" id="b_amount">
                <p>Amount : <span id="b_amount_val"></span></p>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-6">
                <input type="range" min="1" max="1000" value="850" id="b_speed">
                <p>Speed : <span id="b_speed_val"></span></p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 my-2">
+               <button class="btn custom-btn" id = "bubble-f">Sort</button>
             </div>
          </div>
       </dv>
@@ -92,16 +89,38 @@
       Distinctio eligendi laborum deserunt, laboriosam neque dicta.</p>
    </article>
 
-   <article class="text-center main selection-sort" id="selection-sort">
+   <div class="hr"></div>
+   
+   <article class="text-center main select-sort" id="select-sort">
       <h1>SELECTION SORT</h1>
+      <div class="chart chart-select text-center">
+      </div>
+      <div class="container m-0 p-0 ">
+         <div class="row  m-0 p-0 justify-content-center">
+            <!--<div class="col-lg-4 col-md-4 col-sm-6 my-2">
+               <button class="btn custom-btn" id = "select-x">Stop</button>
+            </div>-->
+            <div class="col-lg-4 col-md-4 col-sm-6">
+               <input type="range" min="2" max="100" value="20" id="s_amount">
+               <p>Amount : <span id="s_amount_val"></span></p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+               <input type="range" min="1" max="1000" value="850" id="s_speed">
+               <p>Speed : <span id="s_speed_val"></span></p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 my-2">
+               <button class="btn custom-btn" id = "select-f">Sort</button>
+            </div>
+         </div>
+      </div>
       <img src="images/algoicon.png" width="500" height="500" class="mx-auto img-fluid" alt="" loading="lazy">
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-         Laudantium sint tenetur animi unde dolorum distinctio consequuntur,
-         adipisci ipsum ab aut quae beatae officiis tempora cumque explicabo est dolores, 
-         possimus architecto iure placeat incidunt tempore maiores vero. Non totam quae quidem, 
-         perspiciatis officia magnam ad architecto temporibus impedit odio consequatur 
-         porro deleniti numquam facilis distinctio accusamus placeat nemo! 
-         Distinctio eligendi laborum deserunt, laboriosam neque dicta.</p>
+      Laudantium sint tenetur animi unde dolorum distinctio consequuntur,
+      adipisci ipsum ab aut quae beatae officiis tempora cumque explicabo est dolores, 
+      possimus architecto iure placeat incidunt tempore maiores vero. Non totam quae quidem, 
+      perspiciatis officia magnam ad architecto temporibus impedit odio consequatur 
+      porro deleniti numquam facilis distinctio accusamus placeat nemo! 
+      Distinctio eligendi laborum deserunt, laboriosam neque dicta.</p>
    </article>
 
    <article class="text-center main heap-sort" id="heap-sort">
@@ -223,5 +242,6 @@
    </script>
    <script src="js/slider.js"></script>
    <script src="js/bubblesort.js"></script>
+   <script src="js/selectionsort.js"></script>
    </body>
 </html>
