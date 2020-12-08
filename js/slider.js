@@ -31,4 +31,18 @@ $(document).ready(function(){
             $("#s_speed_val").html(this.value)
         });
         //End of Slider======================
+        //Selection-Slider=============================
+        let x3 = $("#i_amount").value
+        let y3 = $("#i_speed").value            
+        if(x3==undefined){x3 = 20}
+        if(y3==undefined){y3 = 850}            
+        $("#i_amount_val").html(x3)
+        $("#i_speed_val").html(y3)            
+        $("#i_amount").on("input", function(){
+            $("#i_amount_val").html(this.value) 
+        });            
+        $("#i_speed").on("input", function(){
+            $("#i_speed_val").html(this.value)
+        });
+        //End of Slider======================
 });

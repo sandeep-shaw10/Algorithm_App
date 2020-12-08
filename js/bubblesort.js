@@ -23,7 +23,7 @@ $(document).ready(function(){
     $("#bubble-f").click(function(){
         //console.log("BUBBLE SORT SPEED1")
         //console.log(amt1)
-        //console.log(bubbleArray)
+        //console.log("SORT : ",bubbleArray)
         $("#b_amount").prop('disabled', true);
         $("#b_speed").prop('disabled', true);
         $("#bubble-g").prop('disabled', true);
@@ -32,17 +32,18 @@ $(document).ready(function(){
         var swap = false;
         for (let i = 0; i < amt1-1; i++) {
             for(let j = 0; j<amt1-i-1; j++){
-                c += 1
+                //c += 1
                 if(bubbleArray[j]>bubbleArray[j+1]){
                     swap = true
-                    task1(c,i,j,swap)
+                    //task1(c,i,j,swap)
                     let temp = bubbleArray[j]
                     bubbleArray[j] = bubbleArray[j+1]
                     bubbleArray[j+1] = temp
                 }else{
                     swap = false
-                    task1(c,i,j,swap)
+                    //task1(c,i,j,swap)
                 }
+                task1(c,i,j,swap)
             }
         }
         //console.log(bubbleArray)
@@ -73,7 +74,7 @@ function swap(arr,a,b){
 }
 
 //Data generate
-function generateBubbleData(amt1, bubbleArray){
+function generateBubbleData(amt1, bubbleArray1){
     $(".chart-bubble").empty();
         let divWidth =  $(".chart-bubble").width();
         let margin = 0.1 * divWidth
@@ -81,24 +82,26 @@ function generateBubbleData(amt1, bubbleArray){
         //min value 5 - max value 1000 Generating Random
         //console.log(divWidth)
         for(i=0;i<amt1;i++){
-            bubbleArray[i] = getRndInteger(10, 1000);
-            if(max < bubbleArray[i]){
-                max = bubbleArray[i];
+            bubbleArray1[i] = getRndInteger(10, 1000);
+            if(max < bubbleArray1[i]){
+                max = bubbleArray1[i];
             }
         }
         //console.log("MAXIUM NUMBER = ",max)
         for(i=0;i<amt1;i++){
-            let lenFactor = 95 * (bubbleArray[i]/max)
+            let lenFactor = 95 * (bubbleArray1[i]/max)
             let widFactor = ((divWidth - margin)/amt1)
             $('.chart-bubble').prepend('<div class="chart-bar" style="height : '+ lenFactor +'%; width : '+ widFactor +'px; "></div>')
         }
         //console.log("BUBBLE SORT AMOUNT",amt1)
         $(".chart-bar").css("margin-left", margin/amt1);
         $(".chart-bar").css("margin-right", margin/amt1);
-        bubbleArray = bubbleArray.reverse()
-        //console.log(bubbleArray)
+        bubbleArray1 = bubbleArray1.reverse()
+        //console.log(bubbleArray1)
 
-        return bubbleArray
+        bubbleArray = bubbleArray1
+
+        return bubbleArray1
 }
 
 //Visualizing the bars

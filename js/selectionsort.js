@@ -1,4 +1,4 @@
-//BUBBLE SORT COMPLETE
+//SELECTION SORT COMPLETE
 //MIT LICENSE 2020 SANDEEP SHAW
 
 
@@ -19,9 +19,9 @@ $(document).ready(function(){
     
     //console.log(amt2+", "+speed2)
 
-    //Bubble sort visualization  
+    //SELECTION sort visualization  
     $("#select-f").click(function(){
-        //console.log("BUBBLE SORT SPEED2")
+        //console.log("SELECTION SORT SPEED2")
         //console.log(amt2)
         //console.log(selectArray)
         $("#s_amount").prop('disabled', true);
@@ -34,22 +34,23 @@ $(document).ready(function(){
         for (let i = 0; i < amt2-1; i++) {
             index = i
             for(let j = i+1; j<amt2; j++){
-                c += 1
+                //c += 1
                 if(selectArray[j] < selectArray[index]){
                     index = j
                     swap = true
-                    task(c,i,j,swap,index)
+                    //task2(c,i,j,swap,index)
                 }else{
                     swap = false
-                    task(c,i,j,swap,index)
+                    //task2(c,i,j,swap,index)
                 }
-                console.log("("+i+","+j+")"+" : "+selectArray+"__"+index+"___"+selectArray[index])
+                task2(c,i,j,swap,index)
+                //console.log("("+i+","+j+")"+" : "+selectArray+"__"+index+"___"+selectArray[index])
             }
             let temp = selectArray[i]
             selectArray[i] = selectArray[index]
             selectArray[index] = temp
         }
-        console.log(selectArray)
+        //console.log(selectArray)
       });
   });
 
@@ -67,7 +68,7 @@ $( window ).resize(function() {
 
 
 //Data generate
-function generateSelectData(amt2, selectArray){
+function generateSelectData(amt2, selectArray1){
     $(".chart-select").empty();
         let divWidth =  $(".chart-select").width();
         let margin = 0.1 * divWidth
@@ -75,28 +76,30 @@ function generateSelectData(amt2, selectArray){
         //min value 5 - max value 1000 Generating Random
         //console.log(divWidth)
         for(i=0;i<amt2;i++){
-            selectArray[i] = getRndInteger(10, 1000);
-            if(max < selectArray[i]){
-                max = selectArray[i];
+            selectArray1[i] = getRndInteger(10, 1000);
+            if(max < selectArray1[i]){
+                max = selectArray1[i];
             }
         }
         //console.log("MAXIUM NUMBER = ",max)
         for(i=0;i<amt2;i++){
-            let lenFactor = 95 * (selectArray[i]/max)
+            let lenFactor = 95 * (selectArray1[i]/max)
             let widFactor = ((divWidth - margin)/amt2)
             $('.chart-select').prepend('<div class="chart-bar1" style="height : '+ lenFactor +'%; width : '+ widFactor +'px; "></div>')
         }
-        //console.log("BUBBLE SORT AMOUNT",amt2)
+        //console.log("SELECTION SORT AMOUNT",amt2)
         $(".chart-bar1").css("margin-left", margin/amt2);
         $(".chart-bar1").css("margin-right", margin/amt2);
-        selectArray = selectArray.reverse()
-        //console.log(selectArray)
+        selectArray1 = selectArray1.reverse()
+        //console.log(selectArray1)
 
-        return selectArray
+        selectArray = selectArray1
+
+        return selectArray1
 }
 
 //Visualizing the bars
-function task(time,i,j,swap,index){
+function task2(time,i,j,swap,index){
     loop2 = setTimeout(function(){
         //representing the unsorted array
         $(".chart-bar1").css("background-color",  "#66ffb5");

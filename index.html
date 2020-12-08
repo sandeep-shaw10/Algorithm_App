@@ -45,7 +45,7 @@
          </div>
          <div class="icon-text">
             <h3>Algorithm Visualization</h3>
-            <p><i class="fa fa-quote-left"></i>&nbsp;Understand the&nbsp;Sorting&nbsp;oncept by&nbsp;visualizing&nbsp;it&nbsp;better&nbsp;<i class="fa fa-quote-right"></i></p>
+            <p><i class="fa fa-quote-left"></i>&nbsp;Understand the&nbsp;Sorting&nbsp;oncept by&nbsp;visualizing&nbsp;it better&nbsp;<i class="fa fa-quote-right"></i></p>
             <button type="button" class="btn custom-btn">Start</button>
          </div>
       </div>
@@ -61,7 +61,7 @@
       <h1>BUBBLE SORT</h1>
       <div class="chart chart-bubble text-center">
       </div>
-      <dv class="container m-0 p-0 ">
+      <div class="container m-auto p-0 ">
          <div class="row  m-0 p-0 justify-content-center">
             <!--<div class="col-lg-4 col-md-4 col-sm-6 my-2">
                <button class="btn custom-btn" id = "bubble-x">Stop</button>
@@ -78,7 +78,7 @@
                <button class="btn custom-btn" id = "bubble-f">Sort</button>
             </div>
          </div>
-      </dv>
+      </div>
       <img src="images/algoicon.png" width="500" height="500" class="mx-auto img-fluid" alt="" loading="lazy">
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
       Laudantium sint tenetur animi unde dolorum distinctio consequuntur,
@@ -95,7 +95,7 @@
       <h1>SELECTION SORT</h1>
       <div class="chart chart-select text-center">
       </div>
-      <div class="container m-0 p-0 ">
+      <div class="container m-auto p-0 ">
          <div class="row  m-0 p-0 justify-content-center">
             <!--<div class="col-lg-4 col-md-4 col-sm-6 my-2">
                <button class="btn custom-btn" id = "select-x">Stop</button>
@@ -123,16 +123,36 @@
       Distinctio eligendi laborum deserunt, laboriosam neque dicta.</p>
    </article>
 
-   <article class="text-center main heap-sort" id="heap-sort">
-      <h1>HEAP SORT</h1>
+   <article class="text-center main insert-sort" id="insert-sort">
+      <h1>INSERTION SORT</h1>
+      <div class="chart chart-insert text-center">
+      </div>
+      <div class="container m-auto p-0 ">
+         <div class="row  m-0 p-0 justify-content-center">
+            <!--<div class="col-lg-4 col-md-4 col-sm-6 my-2">
+               <button class="btn custom-btn" id = "insert-x">Stop</button>
+            </div>-->
+            <div class="col-lg-4 col-md-4 col-sm-6">
+               <input type="range" min="2" max="100" value="20" id="i_amount">
+               <p>Amount : <span id="i_amount_val"></span></p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+               <input type="range" min="1" max="1000" value="850" id="i_speed">
+               <p>Speed : <span id="i_speed_val"></span></p>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 my-2">
+               <button class="btn custom-btn" id = "insert-f">Sort</button>
+            </div>
+         </div>
+      </div>
       <img src="images/algoicon.png" width="500" height="500" class="mx-auto img-fluid" alt="" loading="lazy">
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-         Laudantium sint tenetur animi unde dolorum distinctio consequuntur,
-         adipisci ipsum ab aut quae beatae officiis tempora cumque explicabo est dolores, 
-         possimus architecto iure placeat incidunt tempore maiores vero. Non totam quae quidem, 
-         perspiciatis officia magnam ad architecto temporibus impedit odio consequatur 
-         porro deleniti numquam facilis distinctio accusamus placeat nemo! 
-         Distinctio eligendi laborum deserunt, laboriosam neque dicta.</p>
+      Laudantium sint tenetur animi unde dolorum distinctio consequuntur,
+      adipisci ipsum ab aut quae beatae officiis tempora cumque explicabo est dolores, 
+      possimus architecto iure placeat incidunt tempore maiores vero. Non totam quae quidem, 
+      perspiciatis officia magnam ad architecto temporibus impedit odio consequatur 
+      porro deleniti numquam facilis distinctio accusamus placeat nemo! 
+      Distinctio eligendi laborum deserunt, laboriosam neque dicta.</p>
    </article>
 
    <article class="text-center main quick-sort" id="quick-sort">
@@ -243,5 +263,7 @@
    <script src="js/slider.js"></script>
    <script src="js/bubblesort.js"></script>
    <script src="js/selectionsort.js"></script>
+   <script src="js/insertionsort.js"></script>
+   <script src="js/quicksort.js"></script>
    </body>
 </html>
