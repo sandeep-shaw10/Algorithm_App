@@ -79,7 +79,7 @@ body{
     margin:5px 25px;
 }
 
-.chart-bar, .chart-bar1, .chart-bar2{
+.chart-bar, .chart-bar1, .chart-bar2, .chart-bar3{
     box-sizing: border-box;
     border-radius: 3px;
     /*width:0.9rem*/

@@ -2,7 +2,7 @@
 //MIT LICENSE 2020 SANDEEP SHAW
 
 
-var amt1=20, speed1=250;
+var amt1=20, speed1=37.55;
 let bubbleArray = []
 var loop1;
 
@@ -15,6 +15,7 @@ $(document).ready(function(){
     
      $("#b_speed").on("input", function(){
         speed1 = (1001-this.value)/amt1
+        console.log(speed1)
      });
     
     //console.log(amt1+", "+speed1)

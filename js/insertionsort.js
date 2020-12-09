@@ -93,7 +93,7 @@ function generateInsertData(amt3, insertArray1){
         $(".chart-bar2").css("margin-left", margin/amt3);
         $(".chart-bar2").css("margin-right", margin/amt3);
         insertArray1 = insertArray1.reverse()
-        console.log(insertArray1)
+        //console.log(insertArray1)
 
         insertArray = insertArray1
 
@@ -111,7 +111,7 @@ function task3(time,i,j,swap){
                 $(".chart-bar2:nth-child("+(m+1)+")").css("background-color",  "red");
                 $(".chart-bar2:nth-child("+(m+2)+")").css("background-color",  "red");
             }else{
-                $(".chart-bar2:nth-child("+(m+1)+")").css("background-color",  "#66ffb5");
+                $(".chart-bar2:nth-child("+(m+1)+")").css("background-color",  "#1c2237");
             }
         }    
         if(swap=="while"){
@@ -121,7 +121,8 @@ function task3(time,i,j,swap){
             $(".chart-bar2:nth-child("+(j+1)+")").css("height",  x);
         }
 
-            
+        
+
         if(i == amt3-1 ){
                 $(".chart-bar2").css("background-color",  "#1c2237");
                 ////console.log(i+","+j)
