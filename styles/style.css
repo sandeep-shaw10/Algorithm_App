@@ -67,11 +67,12 @@ body{
     width: 90vw;
     height: 40vw;
     margin:10px auto;
-    border: 2px outset #ff3333;
+    border: 2px outset  #66ffb5;
     border-radius: 5px;
     box-shadow: 2px 2px 5px #000000;
     display: flex;
     overflow: hidden;
+    background-color: #272727;
 }
 
 .chart-btn .custom-btn{
@@ -89,6 +90,7 @@ body{
     background-color: #66ffb5;
     color: #fafafa;
     text-shadow: 1px 1px 2px black;
+    animation: glow 2s ease-in-out infinite alternate-reverse both;
 }
 
 /*--------------HOVER-----------------*/
@@ -108,6 +110,12 @@ body{
     0%{transform: translateY(10px);}
     100%{transform: translateY(-10px);}
 }
+
+@keyframes glow {
+    0%   {box-shadow: 0px 0px 2.5px #ae02fd;}
+    33%  {box-shadow: 0px 0px 7.5px white;}
+    66%  {box-shadow: 0px 0px 5px#ae02fd;}
+  }
 
 /*--------------MEDIA QUERY-----------------*/
 @media screen and (max-width:300px){
@@ -164,5 +172,11 @@ body{
 
     .icon-text p{
         font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (max-width:385px){
+    .footer-link-items{
+        margin:15px auto;
     }
 }

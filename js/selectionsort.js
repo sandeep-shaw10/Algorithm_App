@@ -105,7 +105,7 @@ function task2(time,i,j,swap,index){
         $(".chart-bar1").css("background-color",  "#66ffb5");
 
         for(let m=0;m<=i;m++){
-            $(".chart-bar1:nth-child("+(m+1)+")").css("background-color",  "#1c2237");
+            $(".chart-bar1:nth-child("+(m+1)+")").css("background-color",  "#ffffff");
             if(m==i){
                 $(".chart-bar1:nth-child("+(m+1)+")").css("background-color",  "#ffcc00");
             }
@@ -128,7 +128,7 @@ function task2(time,i,j,swap,index){
 
 
         if(i == amt2-2 ){
-            $(".chart-bar1").css("background-color",  "#1c2237");
+            $(".chart-bar1").css("background-color",  "#ffffff");
             ////console.log(i+","+j)
             $("#s_amount").prop('disabled', false);
             $("#s_speed").prop('disabled', false);

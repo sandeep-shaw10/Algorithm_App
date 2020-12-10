@@ -91,7 +91,7 @@ function task4(time,i,j,swap){
             }else if(m==j){
                 $(".chart-bar3:nth-child("+(j+1)+")").css("background-color",  "red");
             }else{
-                $(".chart-bar3:nth-child("+(m+1)+")").css("background-color",  "#1c2237");
+                $(".chart-bar3:nth-child("+(m+1)+")").css("background-color",  "#ffffff");
             }
         }
         
@@ -111,7 +111,7 @@ function task4(time,i,j,swap){
         }
 
         if(swap=="end"){
-            $(".chart-bar3").css("background-color",  "#1c2237");
+            $(".chart-bar3").css("background-color",  "#ffffff");
             ////console.log(i+","+j)
             $("#q_amount").prop('disabled', false);
             $("#q_speed").prop('disabled', false);

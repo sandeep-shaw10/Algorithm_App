@@ -108,7 +108,7 @@ function generateBubbleData(amt1, bubbleArray1){
 //Visualizing the bars
 function task1(time,i,j,swap){
     loop1 = setTimeout(function(){
-            //#1c2237
+            //#ffffff
         //representing the unsorted array
         for(let m=0;m<amt1-i;m++){
             $(".chart-bar:nth-child("+(m+1)+")").css("background-color",  " #66ffb5");
@@ -130,12 +130,12 @@ function task1(time,i,j,swap){
         $(".chart-bar:nth-child("+(j+2)+")").css("background-color",  " #ff3333");
 
         if(amt1 == i+j+2){
-            $(".chart-bar:nth-child("+(amt1-i)+")").css("background-color",  "#1c2237");
+            $(".chart-bar:nth-child("+(amt1-i)+")").css("background-color",  "#ffffff");
             ////console.log(i+" + "+j+" qwerty")
         }
 
         if(i == amt1-2 && j==0){
-            $(".chart-bar").css("background-color",  "#1c2237");
+            $(".chart-bar").css("background-color",  "#ffffff");
             ////console.log(i+","+j)
             $("#b_amount").prop('disabled', false);
             $("#b_speed").prop('disabled', false);

@@ -46,7 +46,7 @@ $(document).ready(function(){
         //console.log(insertArray)
         if(c==0){
             window.alert("Data is Sorted")
-            $(".chart-bar2").css("background-color",  "#1c2237");
+            $(".chart-bar2").css("background-color",  "#ffffff");
             ////console.log(i+","+j)
             $("#i_amount").prop('disabled', false);
             $("#i_speed").prop('disabled', false);
@@ -111,7 +111,7 @@ function task3(time,i,j,swap){
                 $(".chart-bar2:nth-child("+(m+1)+")").css("background-color",  "red");
                 $(".chart-bar2:nth-child("+(m+2)+")").css("background-color",  "red");
             }else{
-                $(".chart-bar2:nth-child("+(m+1)+")").css("background-color",  "#1c2237");
+                $(".chart-bar2:nth-child("+(m+1)+")").css("background-color",  "#ffffff");
             }
         }    
         if(swap=="while"){
@@ -124,7 +124,7 @@ function task3(time,i,j,swap){
         
 
         if(i == amt3-1 ){
-                $(".chart-bar2").css("background-color",  "#1c2237");
+                $(".chart-bar2").css("background-color",  "#ffffff");
                 ////console.log(i+","+j)
                 $("#i_amount").prop('disabled', false);
                 $("#i_speed").prop('disabled', false);
