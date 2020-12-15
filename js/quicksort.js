@@ -1,5 +1,7 @@
 //QUICK SORT COMPLETE
-//MIT LICENSE 2020 SANDEEP SHAW
+//MIT LICENSE 2020 
+//MADE BY SANDEEP SHAW
+//WITHOUT CANVAS
 
 
 var amt4=20, speed4=37.55;
@@ -11,13 +13,11 @@ var quickcount = 0
 $(document).ready(function(){
     $("#q_amount").on("input", function(){
         amt4 = this.value
-        $("#q_amount_val").text(this.value);
         quickArray = generateQuicktData(amt4,[])
      });
     
      $("#q_speed").on("input", function(){
         speed4 = (1001-this.value)/amt4
-        $("#q_speed_val").text(this.value);
      });
     
     //console.log(amt4+", "+speed4)
@@ -74,7 +74,7 @@ function generateQuicktData(amt4, quickArray1){
         $(".chart-bar3").css("margin-left", margin/amt4);
         $(".chart-bar3").css("margin-right", margin/amt4);
         quickArray1 = quickArray1.reverse()
-        console.log(quickArray1)
+        //console.log(quickArray1)
 
         quickArray = quickArray1
 
@@ -173,7 +173,3 @@ function QuickPartition(arr, low, high)
 
     return i+1; 
 }
-
-//console.log(quickcount)
-$("#q_amount_val").text("20");
-$("#q_speed_val").text("250");

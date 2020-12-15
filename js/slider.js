@@ -45,4 +45,18 @@ $(document).ready(function(){
             $("#i_speed_val").html(this.value)
         });
         //End of Slider======================
+        //Selection-Slider=============================
+        let x4 = $("#q_amount").value
+        let y4 = $("#q_speed").value            
+        if(x4==undefined){x4 = 20}
+        if(y4==undefined){y4 = 850}            
+        $("#q_amount_val").html(x4)
+        $("#q_speed_val").html(y4)            
+        $("#q_amount").on("input", function(){
+            $("#q_amount_val").html(this.value) 
+        });            
+        $("#q_speed").on("input", function(){
+            $("#q_speed_val").html(this.value)
+        });
+        //End of Slider======================
 });

@@ -1,8 +1,10 @@
 //INSERT SORT COMPLETE
-//MIT LICENSE 2020 SANDEEP SHAW
+//MIT LICENSE 2020 
+//MADE BY SANDEEP SHAW
+//WITHOUT CANVAS
 
 
-var amt3=20, speed3=250;
+var amt3=20, speed3=37.55;
 let insertArray = []
 var loop3;
 

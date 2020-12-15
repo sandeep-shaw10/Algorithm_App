@@ -12,16 +12,36 @@ body{
 
 
 /*------------Button----------------*/
+
+.shadow {
+    border-radius: 20px !important;
+    padding: 0px 25px !important;
+}
+
+
 .custom-btn{
     background-color: #66ffb5 !important;
     padding: 5px 25px !important;
     width:120px !important;
 }
 
+.custom-btn-lg{
+    background-color: #ff3333 !important;
+    padding: 5px 25px !important;
+    width:220px !important;
+    color: #fafafa !important;
+}
+
 .custom-btn:hover{
     background-color: #ff3333 !important;
     transition: 0.5s ease-in;
     color: #fafafa !important;
+}
+
+.custom-btn-lg:hover{
+    background-color:  #66ffb5 !important;
+    transition: 0.5s ease-in;
+    color: #0f0f0f !important;
 }
 
 
@@ -93,6 +113,26 @@ body{
     animation: glow 2s ease-in-out infinite alternate-reverse both;
 }
 
+/*-----------------CODE-Screen-----------------*/
+#code-screen{
+    width:80%;
+    height: 35vw;
+    overflow: auto;
+}
+
+#options #language #lang{
+    border-radius: 5px;
+    width:100px !important;
+}
+
+#fetch-code{
+    padding-left: 15px;
+}
+
+#fetch-code div{
+    font-size: 2vw !important;
+}
+
 /*--------------HOVER-----------------*/
 .nav-link:hover{
     border-bottom: 2px solid #ff3333 ;
@@ -138,6 +178,10 @@ body{
         width:120vw;
     }
 
+    #fetch-code div{
+        font-size: 2.5vw !important;
+    }
+
     /*-----------Line-----------------*/
     .hr{
         width:80%;
@@ -155,6 +199,10 @@ body{
 
     .icon{
         width:80vw;
+    }
+
+    #code-screen{
+        height:350px;
     }
 
 }

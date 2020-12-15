@@ -1,8 +1,10 @@
-//SELECTION SORT COMPLETE
-//MIT LICENSE 2020 SANDEEP SHAW
+//SELECTION SORT 
+//MIT LICENSE 2020 
+//MADE BY SANDEEP SHAW
+//WITHOUT CANVAS
 
 
-var amt2=20, speed2=250;
+var amt2=20, speed2=37.55;
 let selectArray = []
 var loop2;
 
