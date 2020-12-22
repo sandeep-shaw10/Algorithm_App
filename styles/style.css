@@ -9,7 +9,21 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
 
+/*----------Definition-----*/
+.definition{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    border-left: 5px solid cyan;
+    padding:10px 15px;
+    background-color: rgba(0, 255, 255,0.2);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
 
+.main{
+    margin-bottom: 60px;
+}
 
 /*------------Button----------------*/
 
@@ -130,7 +144,39 @@ body{
 }
 
 #fetch-code div{
-    font-size: 2vw !important;
+    font-size: 1.5vw !important;
+}
+
+.copy-alert{
+    position: fixed;
+    right:25px;
+    top:25px;
+    z-index: 1;
+    padding:2px 4px;
+    border-radius: 4px;
+    background-color: #292929;
+    color: #fafafa;
+}
+
+.sorry-alert{
+    position: fixed;
+    right:15px;
+    top:15px;
+    z-index: 2;
+    padding:10px 20px;
+    border-radius: 10px;
+    background-color: #292929;
+    color: #fafafa;
+    border: 5px #fafafa outset;
+    box-shadow: 5px 5px 15px #000000;
+}
+
+.appear{
+    display:block
+}
+
+.disappear{
+    display:none;
 }
 
 /*--------------HOVER-----------------*/
@@ -207,9 +253,13 @@ body{
 
 }
 
-@media screen and (max-width:991px){
+@media screen and (max-width:992px){
     .navbar-nav{
         background-color:#e6fff3;
+    }
+
+    .definition{
+        font-size: 15px;
     }
 }
 

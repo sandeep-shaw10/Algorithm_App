@@ -17,7 +17,6 @@ $(document).ready(function(){
     
      $("#b_speed").on("input", function(){
         speed1 = (1001-this.value)/amt1
-        console.log(speed1)
      });
     
     //console.log(amt1+", "+speed1)

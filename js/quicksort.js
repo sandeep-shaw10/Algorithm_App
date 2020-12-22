@@ -33,7 +33,7 @@ $(document).ready(function(){
         quickcount = 0
         QuickSort(quickArray, 0, amt4-1);
         task4(quickcount++,null,null,"end")
-        console.log(quickArray)
+        //console.log(quickArray)
       });
   });
 
@@ -117,11 +117,11 @@ function task4(time,i,j,swap){
             $("#q_speed").prop('disabled', false);
             $("#quick-g").prop('disabled', false);
             $("#quick-f").prop('disabled', false);
-            console.log(quickcount)
+            //console.log(quickcount)
             setTimeout(
                 function() 
                 {
-                    window.alert("AUTOMATIC PAGE REFRESH")
+                    window.alert("AUTOMATIC PAGE REFRESH \n RELEASE HEAP MEMORY : FOR BETTER PERFORMANCE")
                     location.reload();
                 }, 1000);
         }
@@ -157,7 +157,7 @@ function QuickPartition(arr, low, high)
             let temp = arr[i]; 
             arr[i] = arr[j]; 
             arr[j] = temp;
-            console.log(i+","+j+", a(i)="+arr[i]+", a(j)="+arr[j])
+            //console.log(i+","+j+", a(i)="+arr[i]+", a(j)="+arr[j])
             swap = "for"
         }else{
             swap = "notfor"
