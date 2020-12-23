@@ -93,7 +93,7 @@ This project is licensed under [MIT](LICENSE.txt "View License")
   4. I rely on HTML Structure `div` and Jquery for the animations and it worked well without `CANVAS`
   5. Learned how to scrape the content inside the HTML Structure using Jquery inorder to get copied in the clipboard
 
-# FUTURE IMPLIMENTATION
+# FUTURE IMPLEMENTATION
   1. Merge the entire `.js` script into a single file
   2. Addding Merge and Heap Sort
   3. Keeping one screen for vizualization with multiple sorting options
