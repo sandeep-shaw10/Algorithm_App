@@ -7,10 +7,7 @@
 ` WEBSITE LINKS ` : [Click Here](https://sandeep-shaw10.github.io/Algorithm_App/ "Algorithm App")
 
 ### Website Preview
-![App Preview Gif](images/gif1.gif)
-![App Preview Gif](images/gif2.gif)
-![App Preview Gif](images/gif3.gif)
-![App Preview Gif](images/gif4.gif)
+![App Preview Gif](images/Algorithm_App.gif)
 
 ### Available Sorting Techniques :
   * Bubble Sort
