@@ -17,19 +17,19 @@
 
 ### Available Coding Language Snippet:
 | C | C++ | Java | Python |
-|---|:-----:|:------:|--------:|
+|---|-----|------|--------|
   
 > Hope you like this simple website
 > Thank You ! 
 >
->Have a nice day :-)
+>Have a nice day &#128512;
 
 ---
 
 # PRODUCTION 
-|Sl.| _Release Date_ | _Version_ | _Author_ |
-|----|---|:-----:|:------:|--------:|
-|1|23th Dec, 2020|v0.123.122.020|*`Sandeep Shaw`*|
+|Sl.| _Release Date_ | _Version_    | _Author_ |
+|---|----------------|--------------|----------|
+|1  |23th Dec, 2020  |v0.123.122.020|*`Sandeep Shaw`*|
 
 
 ### WEBSITE TYPE : _*`Static`*_
@@ -75,9 +75,9 @@ This project is licensed under [MIT](LICENSE.txt "View License")
 >(Student, C.S.E)
 >
 >Follow me on :
->[LinkedIn](https://www.linkedin.com/in/sandeep-shaw-b47b47158/)
->[Instagram](https://www.instagram.com/san_deep_10/)
->[Youtube](https://www.youtube.com/channel/UCnzoz-Snqs689f1YLqi--zg)
+>[LinkedIn](https://www.linkedin.com/in/sandeep-shaw-b47b47158/) |
+>[Instagram](https://www.instagram.com/san_deep_10/) |
+>[Youtube](https://www.youtube.com/channel/UCnzoz-Snqs689f1YLqi--zg) |
 >[Github](https://github.com/sandeep-shaw10)
 >
 >If you like this repository dont forget to give a star &#128077;
