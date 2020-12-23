@@ -4,7 +4,7 @@
 > Understand the Sorting concept by visualizing it.
 > *Vizualization* _-_ *Definition* _-_ *Complexity* _-_ *Codes*
 
-` WEBSITE LINKS ` : [Click Here](https://www.google.com "Algorithm App")
+` WEBSITE LINKS ` : [Click Here](https://sandeep-shaw10.github.io/Algorithm_App/ "Algorithm App")
 
 ### Website Preview
 ![App Preview Gif](images/algoicon.png)
